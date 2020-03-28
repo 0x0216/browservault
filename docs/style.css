@@ -42,6 +42,17 @@ button2:hover {
   cursor: grab;
 }
 
+questiontitle{
+  margin-top: 20px;
+     margin-right: 40px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: white;
+  border: black;
+}
+
+
 h1 {
   font-weight: 200;
   font-style: 26px;
