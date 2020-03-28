@@ -11,6 +11,4 @@ button.addEventListener ("click", function() {
   window.open("creator.html");
 });
 
-$('#msg').html(data.message)
-
 console.log(data)
