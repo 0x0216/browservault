@@ -1,9 +1,12 @@
-import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.awt.event.KeyEvent;
-import java.security.Key;
+import java.awt.event.*;
+
+import javax.swing.*;
+import javax.swing.event.HyperlinkEvent;
+import javax.swing.event.HyperlinkListener;
+
+import java.net.URL;
+
 
 public class BrowserVault {
     public static void main(String[] args) {
@@ -15,14 +18,8 @@ public class BrowserVault {
         frame.setResizable(false);
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 
-        JButton close = new JButton("close");
-        close.addActionListener(new ActionListener() {
-            @Override
-            public void actionPerformed(ActionEvent actionEvent) {
-                System.exit(0);
-            }
-        });
-        frame.add(close);
+        JPanel contentPane = new contentPane();
+        frame.add(contentPane);
 
         frame.setVisible(true);
         frame.pack();

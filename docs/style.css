@@ -28,6 +28,20 @@ button:hover {
   cursor: grab;
 }
 
+button2{
+    margin-top: 20px;
+     margin-right: 40px;
+  line-height: 60px;
+  font-weight: bold;
+  padding: 0 40px;
+  background: lightblue;
+  border: none;
+}
+button2:hover {
+  background: purple;
+  cursor: grab;
+}
+
 h1 {
   font-weight: 200;
   font-style: 26px;
