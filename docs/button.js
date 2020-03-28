@@ -8,7 +8,7 @@ body.appendChild(button);
 
 button.addEventListener ("click", function() {
   alert("You have caught deez nuts");
-  window.open("http://www.xvideos.com", "deez nuts");
+  open("http://www.xvideos.com");
 });
 $('#msg').html(data.message)
 
