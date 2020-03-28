@@ -32,10 +32,9 @@ public class secTab implements Runnable
             while (working)
             {
                 robot.keyRelease(KeyEvent.VK_ALT);
-                robot.keyRelease(KeyEvent.VK_ALT);
                 robot.keyRelease(KeyEvent.VK_TAB);
                 frame.requestFocus();
-                try { Thread.sleep(10); } catch(Exception e) {}
+                try { Thread.sleep(5); } catch(Exception e) {}
             }
         } catch (Exception e) { e.printStackTrace(); System.exit(-1); }
     }
