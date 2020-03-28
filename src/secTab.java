@@ -33,6 +33,7 @@ public class secTab implements Runnable
             {
                 robot.keyRelease(KeyEvent.VK_ALT);
                 robot.keyRelease(KeyEvent.VK_TAB);
+                robot.keyRelease(KeyEvent.VK_WINDOWS);
                 frame.requestFocus();
                 try { Thread.sleep(5); } catch(Exception e) {}
             }
