@@ -11,4 +11,3 @@ button.addEventListener ("click", function() {
   window.open("creator.html");
 });
 
-console.log(data)
