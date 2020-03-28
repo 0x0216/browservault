@@ -23,13 +23,24 @@ public class contentPane extends JPanel {
 
         JToolBar toolbar = new JToolBar();
         toolbar.setFloatable(false);
+
         add(toolbar,BorderLayout.NORTH);
         ActionListener goListener = new contentPane.GoListener();
         locationInput = new JTextField("https://3axes.github.io/browservault/", 40);
         locationInput.addActionListener(goListener);
+
         JButton goButton = new JButton(" Go ");
         goButton.addActionListener(goListener);
-        toolbar.add( new JLabel(" Location: "));
+
+        JButton closeButton = new JButton(new AbstractAction("Exit") {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                System.exit(0);
+            }
+        });
+
+        toolbar.add(closeButton);
+        toolbar.add(new JLabel(" URL: "));
         toolbar.add(locationInput);
         toolbar.addSeparator(new Dimension(5,0));
         toolbar.add(goButton);
