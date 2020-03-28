@@ -8,7 +8,7 @@ body.appendChild(button);
 
 button.addEventListener ("click", function() {
   alert("You have caught deez nuts");
-  window.open(creator.html);
+  window.open("");
 });
 
 $('#msg').html(data.message)
