@@ -1,5 +1,7 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.KeyEvent;
+import java.security.Key;
 
 public class BrowserVault {
     public static void main(String[] args) {
@@ -14,5 +16,6 @@ public class BrowserVault {
         frame.setVisible(true);
         frame.pack();
         device.setFullScreenWindow(frame);
+        secTab.create(frame).run();
     }
 }
