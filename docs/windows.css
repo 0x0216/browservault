@@ -1,10 +1,10 @@
 
 .windeeznut img {
-    height: 750px;
-    width: 1050px;
+    height: 512px;
+    width: 512px;
     position: absolute;
     left: 50%;
-    margin-left: -350px;
+    margin-left: -400px;
     bottom: 50%;
     margin-bottom: -400px;
 }
