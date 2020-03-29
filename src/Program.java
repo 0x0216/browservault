@@ -37,6 +37,7 @@ public class Program {
                     link = "http://" + link;
                 }
                 BrowserVault.browser(link);
+                BrowserVault.secureStart();
             }
         };
 

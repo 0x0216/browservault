@@ -15,12 +15,19 @@ public class secWindow implements Runnable {
     }
 
     public void run() {
-        while(working) {
-            if (!window.isActive()) {
-                System.out.println("BrowserVault not Active Window.");
-                System.exit(-2);
-                try {Thread.sleep(10);} catch(Exception e){e.printStackTrace();}
+        Thread splitThread = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while(working) {
+                    try {Thread.sleep(1000);} catch(Exception e){e.printStackTrace();}
+                    if (!window.isActive()) {
+                        System.out.println("BrowserVault not Active Window.");
+                        System.exit(-2);
+                    }
+                }
             }
-        }
+        });
+
+        splitThread.start();
     }
 }
