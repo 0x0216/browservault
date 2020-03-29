@@ -4,12 +4,8 @@ import javafx.scene.Scene;
 import javafx.scene.web.WebView;
 
 import javax.swing.*;
-import javax.swing.event.HyperlinkEvent;
-import javax.swing.event.HyperlinkListener;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.net.URL;
 
 public class contentPane extends JPanel {
 

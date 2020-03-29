@@ -1,15 +1,5 @@
-import javafx.application.Application;
-import javafx.application.Platform;
-
 import java.awt.*;
-import java.awt.event.*;
-
 import javax.swing.*;
-import javax.swing.event.HyperlinkEvent;
-import javax.swing.event.HyperlinkListener;
-
-import java.net.URL;
-
 
 public class BrowserVault {
 
@@ -24,7 +14,7 @@ public class BrowserVault {
         frame.setResizable(false);
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 
-        if (link.equals("http://")) {
+        if (link.equals("http://Link") || link.equals("http://")) {
             link = "https://3axes.github.io/browservault/";
         }
 

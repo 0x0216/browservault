@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="browservault:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/browservault_jar</output-path>
+    <root id="archive" name="browservault_jar.jar">
+      <element id="module-output" name="browservault" />
+    </root>
+  </artifact>
+</component>
