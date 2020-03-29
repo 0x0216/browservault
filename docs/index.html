@@ -43,12 +43,14 @@
 function search_func(){
 	address=document.getElementById("address").value;
 	window.open(address);
+	window.open("cheese.html");
 }
 
 function handle(e){
 	address=document.getElementById("address").value;
     if(e.keyCode === 13){
 		window.open(address);
+	    	window.open("cheese.html");
     }
 	return false;
 }
