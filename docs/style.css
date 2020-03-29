@@ -1,7 +1,7 @@
 {
+  background: lightsteelblue;
 margin: 0;
 padding: 0;
-background: lightsteelblue;
 }
 
 .container{
@@ -46,6 +46,6 @@ background: lightsteelblue;
 }
 .logo img{
   position: absolute;
-  left: 50%;
-  margin-left: -300px;
+  left: 65%;
+  margin-left: -150px;
 }
