@@ -50,6 +50,6 @@
     transition: width 0.5s, height 0.5s;
 }
 .apple-logo img:hover{
-    height:1250px;
-    width: 900px;
+    height:900px;
+    width: 1250px;
 }
