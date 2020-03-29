@@ -42,8 +42,6 @@ background: lightsteelblue;
   color: black;
 }
 .logo img{
-  width: 100%;
-  height: 100px;
   position: absolute;
   left: 50%;
   margin-left: -100px;
