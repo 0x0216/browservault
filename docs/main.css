@@ -7,8 +7,13 @@
 h1{
     text-align: center;
 }
+
+
 .wrapper > .left > div{
     font-size: 1.25em;
+}
+.left{
+    display: flex;
 }
 
 .link-wrapper {
