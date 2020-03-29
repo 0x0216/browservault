@@ -16,8 +16,8 @@ public class codegenerator {
         
     }
     public static void filer(StringBuilder s) throws IOException{
-        File file = new File("C:\\" +s.toString() + ".txt");
-        FileWriter br = new FileWriter("C:\\" +s.toString() + ".txt");
+        File file = new File(s.toString());
+        FileWriter br = new FileWriter(s.toString());
         String su = s.toString();
         br.write(su);
         
