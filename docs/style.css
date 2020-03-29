@@ -8,9 +8,29 @@
 }
 .nav-wrapper > .left > div{
   margin-right: 20px;
-  font-size: 0.9em;
+  font-size: 2.5em;
+}
+
+.right{
+  display: flex;
 }
 .nav-wrapper > .right > div {
   margin-left: 20px;
   font-size: 0.9em;
+}
+.nav-link-wrapper {
+  height: 20px;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s;
+}
+.nav-link-wrapper a {
+  color: #8a8a8a;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.nav-link-wrapper :hover{
+  border-bottom: 1px solid black;
+}
+.nav-link-wrapper a :hover{
+  color: black;
 }
