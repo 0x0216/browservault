@@ -5,7 +5,7 @@ background: lightsteelblue;
 }
 
 .container{
-  font-family: "Comic Sans MS";
+  font-family: "Deeznuts";
   font-palette: uppercase;
 }
 .nav-wrapper{
@@ -47,5 +47,5 @@ background: lightsteelblue;
 .logo img{
   position: absolute;
   left: 50%;
-  margin-left: -200px;
+  margin-left: -250px;
 }
