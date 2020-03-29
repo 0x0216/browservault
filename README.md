@@ -1,6 +1,5 @@
 # Browser Vault
 
 
-Created by the master of python himself, Browser Vault will give you deez nuts for a low low price of 1000000000000000 rupees. (or 6 dollars)
-
+Browser Vault is a new web application design to minimize academic dishonesty in a remote learning setting. It locks down your browser, preventing students from using common keyboard and mouse shortcuts such as Alt + tab, Windows + arrow, or the Esc key. Browser Vault monitors your browser and sends analytics to the teacher. 
 https://3axes.github.io/browservault/
