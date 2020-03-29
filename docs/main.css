@@ -1,8 +1,4 @@
-*{
-    background-color: lightslategray;
-    width: 100%;
-    height: 100%;
-}
+
 .apple-logo img {
     height: 750px;
     width: 1050px;
@@ -57,4 +53,9 @@
 .apple-logo img:hover{
     height:900px;
     width: 1250px;
+}
+*{
+    background-color: lightslategray;
+    width: 100%;
+    height: 100%;
 }
