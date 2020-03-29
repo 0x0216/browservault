@@ -46,17 +46,10 @@
 .link-wrapper a:hover{
     color: black;
 }
-.apple-logo img {
-    border: 1100px solid transparent;
-    transition: border-bottom 0.5s;
-}
-.apple-logo img a{
-    color: #8a8a8a;
-    transition: color 0.5s;
+.apple-logo img{
+    transition: width 0.5s, height 0.5s;
 }
 .apple-logo img:hover{
-    border: 1100px solid black;
-}
-.apple-logo img a:hover{
-    color: black;
+    height:1250px;
+    width: 900px;
 }
