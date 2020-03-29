@@ -13,7 +13,6 @@ import java.net.URL;
 
 public class contentPane extends JPanel {
 
-//    private JEditorPane editPane;
     private JFXPanel editPane;
     private JTextField locationInput;
 
@@ -23,8 +22,6 @@ public class contentPane extends JPanel {
         setBorder(BorderFactory.createLineBorder(Color.BLACK,2));
 
         editPane = new JFXPanel();
-//        editPane.setEditable(false);
-//        editPane.addHyperlinkListener(new contentPane.LinkListener());
         add(new JScrollPane(editPane),BorderLayout.CENTER);
 
         JToolBar toolbar = new JToolBar();
@@ -44,14 +41,6 @@ public class contentPane extends JPanel {
         toolbar.add(closeButton);
         toolbar.add(new JLabel(" URL: "));
         toolbar.add(locationInput);
-        toolbar.addSeparator(new Dimension(5,0));
-//        try {
-//            loadURL(new URL(link));
-//        }
-//        catch(Exception e) {
-//            JOptionPane.showMessageDialog(contentPane.this, "URL does not exist.");
-//            System.exit(-1);
-//        }
 
         Platform.runLater(new Runnable() {
             @Override
@@ -62,22 +51,4 @@ public class contentPane extends JPanel {
             }
         });
     }
-
-//    private class LinkListener implements HyperlinkListener {
-//        public void hyperlinkUpdate(HyperlinkEvent evt) {
-//            if (evt.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
-//                loadURL(evt.getURL());
-//            }
-//        }
-//    }
-
-//    private void loadURL(URL url) {
-//        try {
-//            editPane.setPage(url);
-//        } catch (Exception e) {
-//            editPane.setContentType("text/plain");
-//            editPane.setText("Sorry, the requested document was not found\n"
-//                    + "or cannot be displayed.\n\nError:" + e);
-//        }
-//    }
 }

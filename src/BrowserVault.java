@@ -1,3 +1,4 @@
+import javafx.application.Application;
 import javafx.application.Platform;
 
 import java.awt.*;
@@ -12,8 +13,6 @@ import java.net.URL;
 
 public class BrowserVault {
     public static void browser(String link) {
-        boolean working = true;
-
         GraphicsEnvironment graphics = GraphicsEnvironment.getLocalGraphicsEnvironment();
         GraphicsDevice device = graphics.getDefaultScreenDevice();
 
@@ -22,7 +21,7 @@ public class BrowserVault {
         frame.setResizable(false);
         frame.setDefaultCloseOperation(WindowConstants.DO_NOTHING_ON_CLOSE);
 
-        if (link == null) {
+        if (link.equals("http://")) {
             link = "https://3axes.github.io/browservault/";
         }
 
@@ -32,19 +31,5 @@ public class BrowserVault {
         frame.setVisible(true);
         frame.pack();
         device.setFullScreenWindow(frame);
-
-//        Platform.runLater(new Runnable() {
-//            @Override
-//            public void run() {
-//                secTab.create(frame).run();
-//            }
-//        });
-
-        while (working) {
-            if (javax.swing.FocusManager.getCurrentManager().getFocusedWindow() == null) {
-                System.out.println("Active Window not BrowserVault");
-                System.exit(-2);
-            }
-        }
     }
 }
