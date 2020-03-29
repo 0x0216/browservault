@@ -1,10 +1,4 @@
 
-
-.header{
-    text-align: center;
-    font-size: 3em;
-    border: 5px solid blue;
-}
 .footer {
     position: fixed;
     float: left;
@@ -13,6 +7,12 @@
 .footer p{
     font-size: 1em;
 }
+.header{
+    text-align: center;
+    font-size: 3em;
+    border: 3px solid blue;
+}
+
 
 .wrapper > .left > div{
     font-size: 1.25em;
