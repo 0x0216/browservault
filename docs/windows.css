@@ -1,0 +1,59 @@
+
+.windeeznuts img {
+    height: 750px;
+    width: 1050px;
+    position: absolute;
+    left: 50%;
+    margin-left: -550px;
+    bottom: 50%;
+    margin-bottom: -400px;
+
+}
+.footer {
+    position: fixed;
+    float: left;
+    bottom: 0;
+}
+.footer > .copyright{
+    font-size: 1em;
+}
+.header{
+    text-align: center;
+    font-size: 3em;
+    border: 3px solid blue;
+}
+
+
+.wrapper > .left > div{
+    font-size: 1.25em;
+}
+.left{
+    display: flex;
+}
+
+.link-wrapper {
+    height: 20px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.5s;
+}
+.link-wrapper a{
+    color: #8a8a8a;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+.link-wrapper:hover{
+    border-bottom: 2px solid black;
+}
+.link-wrapper a:hover{
+    color: black;
+}
+.windeeznuts img{
+    transition: width 0.5s, height 0.5s;
+}
+.windeeznuts img:hover{
+    height:900px;
+    width: 1250px;
+}
+body{
+    background-color: lightblue;
+}
