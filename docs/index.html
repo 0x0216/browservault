@@ -33,7 +33,7 @@
 
 
     <div>
-<input id="address" type="text" onkeypress="handle(event)" placeholder="Type something here">
+<input id="address" type="text" onkeypress="handle(event)" placeholder="Paste link">
 	      <input id="search" type="button" value="search" onClick="search_func()">
     </div>
 
@@ -42,14 +42,14 @@
 <script>
 function search_func(){
 	address=document.getElementById("address").value;
-	window.open(address);
+
 	window.open("cheese.html");
 }
 
 function handle(e){
 	address=document.getElementById("address").value;
     if(e.keyCode === 13){
-		window.open(address);
+		
 	    	window.open("cheese.html");
     }
 	return false;
