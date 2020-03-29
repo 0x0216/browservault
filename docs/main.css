@@ -4,7 +4,7 @@
     float: left;
     bottom: 0;
 }
-p{
+.header{
     text-align: center;
     font-size: 3em;
     border: 5px;
