@@ -1,3 +1,8 @@
+import javafx.application.Platform;
+import javafx.embed.swing.JFXPanel;
+import javafx.scene.Scene;
+import javafx.scene.web.WebView;
+
 import javax.swing.*;
 import javax.swing.event.HyperlinkEvent;
 import javax.swing.event.HyperlinkListener;
@@ -8,29 +13,26 @@ import java.net.URL;
 
 public class contentPane extends JPanel {
 
-    private JEditorPane editPane;
+//    private JEditorPane editPane;
+    private JFXPanel editPane;
     private JTextField locationInput;
 
-    public contentPane() {
+    public contentPane(String link) {
         setBackground(Color.BLACK);
         setLayout(new BorderLayout(1,1));
-        setBorder(BorderFactory.createLineBorder(Color.BLACK,1));
+        setBorder(BorderFactory.createLineBorder(Color.BLACK,2));
 
-        editPane = new JEditorPane();
-        editPane.setEditable(false);
-        editPane.addHyperlinkListener(new contentPane.LinkListener());
+        editPane = new JFXPanel();
+//        editPane.setEditable(false);
+//        editPane.addHyperlinkListener(new contentPane.LinkListener());
         add(new JScrollPane(editPane),BorderLayout.CENTER);
 
         JToolBar toolbar = new JToolBar();
         toolbar.setFloatable(false);
 
         add(toolbar,BorderLayout.NORTH);
-        ActionListener goListener = new contentPane.GoListener();
-        locationInput = new JTextField("https://3axes.github.io/browservault/", 40);
-        locationInput.addActionListener(goListener);
-
-        JButton goButton = new JButton(" Go ");
-        goButton.addActionListener(goListener);
+        locationInput = new JTextField(link);
+        locationInput.setEditable(false);
 
         JButton closeButton = new JButton(new AbstractAction("Exit") {
             @Override
@@ -43,46 +45,39 @@ public class contentPane extends JPanel {
         toolbar.add(new JLabel(" URL: "));
         toolbar.add(locationInput);
         toolbar.addSeparator(new Dimension(5,0));
-        toolbar.add(goButton);
+//        try {
+//            loadURL(new URL(link));
+//        }
+//        catch(Exception e) {
+//            JOptionPane.showMessageDialog(contentPane.this, "URL does not exist.");
+//            System.exit(-1);
+//        }
+
+        Platform.runLater(new Runnable() {
+            @Override
+            public void run() {
+                WebView wv = new WebView();
+                editPane.setScene(new Scene(wv));
+                wv.getEngine().load(link);
+            }
+        });
     }
 
-    private class LinkListener implements HyperlinkListener {
-        public void hyperlinkUpdate(HyperlinkEvent evt) {
-            if (evt.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
-                loadURL(evt.getURL());
-            }
-        }
-    }
+//    private class LinkListener implements HyperlinkListener {
+//        public void hyperlinkUpdate(HyperlinkEvent evt) {
+//            if (evt.getEventType() == HyperlinkEvent.EventType.ACTIVATED) {
+//                loadURL(evt.getURL());
+//            }
+//        }
+//    }
 
-    private class GoListener implements ActionListener {
-        public void actionPerformed(ActionEvent evt) {
-            URL url;
-            try {
-                String location = locationInput.getText().trim();
-                if (location.length() == 0)
-                    throw new Exception();
-                if (! location.contains("://"))
-                    location = "http://" + location;
-                url = new URL(location);
-            }
-            catch (Exception e) {
-                JOptionPane.showMessageDialog(contentPane.this,
-                        "The Location input box does not\nccontain a legal URL.");
-                return;
-            }
-            loadURL(url);
-            locationInput.selectAll();
-            locationInput.requestFocus();
-        }
-    }
-
-    private void loadURL(URL url) {
-        try {
-            editPane.setPage(url);
-        } catch (Exception e) {
-            editPane.setContentType("text/plain");
-            editPane.setText("Sorry, the requested document was not found\n"
-                    + "or cannot be displayed.\n\nError:" + e);
-        }
-    }
+//    private void loadURL(URL url) {
+//        try {
+//            editPane.setPage(url);
+//        } catch (Exception e) {
+//            editPane.setContentType("text/plain");
+//            editPane.setText("Sorry, the requested document was not found\n"
+//                    + "or cannot be displayed.\n\nError:" + e);
+//        }
+//    }
 }
