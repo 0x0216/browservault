@@ -1,3 +1,8 @@
+
+.container{
+  display:grid;
+  grid-template-columns: 1fr;
+}
 .nav-wrapper{
   display:flex;
   justify-content: space-between;
@@ -33,4 +38,8 @@
 }
 .nav-link-wrapper a:hover{
   color: black;
+}
+.items-wrapper{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
