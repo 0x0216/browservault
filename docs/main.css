@@ -1,8 +1,7 @@
 .apple-logo img{
-
     height: 250px;
-    width: 250px;
-    text-align: center;
+    width: 350px;
+    margin: 0 auto;
 }
 .footer {
     position: fixed;
