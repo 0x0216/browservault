@@ -1,4 +1,10 @@
-
+.apple-logo img{
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    height: 300%;
+    width: 300%;
+}
 .footer {
     position: fixed;
     float: left;
@@ -36,11 +42,4 @@
 }
 .link-wrapper a:hover{
     color: black;
-}
-.apple-logo img{
-    position: absolute;
-    left: 50%;
-    bottom: 50%;
-    height: 100%;
-    width: 100%;
 }
