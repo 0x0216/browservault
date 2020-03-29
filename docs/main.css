@@ -4,11 +4,11 @@
     float: left;
     bottom: 0;
 }
-h1{
+p{
     text-align: center;
     font-size: 3em;
     border: 5px;
-    border-color: bisque;
+    border-color: blue;
 }
 
 
