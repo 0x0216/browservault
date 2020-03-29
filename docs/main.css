@@ -38,8 +38,9 @@
     color: black;
 }
 .apple-logo img{
+    position: absolute;
     left: 50%;
     bottom: 50%;
-    height: 100px;
-    width: 100px;
+    height: 100%;
+    width: 100%;
 }
