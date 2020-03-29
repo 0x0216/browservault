@@ -37,3 +37,9 @@
 .link-wrapper a:hover{
     color: black;
 }
+.apple-logo img{
+    left: 50%;
+    bottom: 50%;
+    height: 100px;
+    width: 100px;
+}
