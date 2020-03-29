@@ -12,14 +12,7 @@ public class codegenerator {
            int character = (int)(Math.random()*master.length());
            bruh.append(master.charAt(character));
        }
-        filer(bruh);
-        
-    }
-    public static void filer(StringBuilder s) throws IOException{
-        File file = new File(s.toString());
-        FileWriter br = new FileWriter(s.toString());
-        String su = s.toString();
-        br.write(su);
+       System.out.println(bruh);
         
     }
 
