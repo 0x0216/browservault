@@ -39,5 +39,7 @@
   color: black;
 }
 .logo img{
-  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  margin-left: -275px;
 }
