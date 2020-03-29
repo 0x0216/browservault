@@ -30,10 +30,15 @@
         <img src = "logo.png" alt = "Browser vault">
     </div>
 </div>
-  <script src = "mc.js">
-    </script>
-
-
+    <div>
+<input type="text" id = "searchbox" placeholder="Search the link">
+        <input type = "image" id = "searcher" alt = "search" src = "searbh.png">
+        <script>
+          searcher.addEventListener("click", function(){
+              open(document.getElementById("searchbox").value);
+          }
+        </script>
+    </div>
 
    </body>
 </html>
