@@ -9,6 +9,8 @@
     position: fixed;
     float: left;
     bottom: 0;
+}
+.footer p{
     font-size: 1em;
 }
 
