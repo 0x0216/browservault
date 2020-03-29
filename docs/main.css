@@ -1,2 +1,5 @@
-
-
+.footer {
+    position: fixed;
+    float: left;
+    bottom: 0;
+}
