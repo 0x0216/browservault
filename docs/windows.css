@@ -4,9 +4,9 @@
     width: 512px;
     position: absolute;
     left: 50%;
-    margin-left: -400px;
+    margin-left: -300px;
     bottom: 50%;
-    margin-bottom: -400px;
+    margin-bottom: -250px;
 }
 .footer {
     position: fixed;
@@ -50,8 +50,8 @@
     transition: width 0.5s, height 0.5s;
 }
 .windeeznut img:hover{
-    height:900px;
-    width: 1250px;
+    height:662px;
+    width: 662px;
 }
 body{
     background-color: lightblue;
