@@ -1,13 +1,12 @@
 
 .windeeznut img {
-    height: 750px;
-    width: 1050px;
+    height: 500px;
+    width: 700px;
     position: absolute;
     left: 50%;
     margin-left: -100px;
     bottom: 50%;
     margin-bottom: -400px;
-
 }
 .footer {
     position: fixed;
