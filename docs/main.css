@@ -6,6 +6,9 @@
 }
 h1{
     text-align: center;
+    font-size: 1em;
+    border: 2px;
+    border-color: bisque;
 }
 
 
