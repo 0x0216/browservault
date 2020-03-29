@@ -3,9 +3,9 @@
     width: 350px;
     position: absolute;
     left: 50%;
-    margin-left: -275px;
+    margin-left: -100px;
     bottom: 50%;
-    margin-bottom: -50px;
+    margin-bottom: -100px;
 }
 .footer {
     position: fixed;
