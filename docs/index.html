@@ -31,8 +31,13 @@
     </div>
 </div>
     <div>
-<input type="text" placeholder="Search the link">
-        <img src = "searbh.png" alt = "fuck">
+<input type="text" id = "searchbox" placeholder="Search the link">
+        <input type = "image" id = "searcher" alt = "search" src = "searbh.png">
+        <script>
+          searcher.addEventListener("click", function(){
+              open(document.getElementById("searchbox").value);
+          }
+        </script>
     </div>
 
    </body>
