@@ -47,10 +47,10 @@
 .link-wrapper a:hover{
     color: black;
 }
-.windeeznuts img{
+.windeeznut img{
     transition: width 0.5s, height 0.5s;
 }
-.windeeznuts img:hover{
+.windeeznut img:hover{
     height:900px;
     width: 1250px;
 }
