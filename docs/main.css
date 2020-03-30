@@ -9,14 +9,6 @@
     margin-bottom: -400px;
 
 }
-.footer {
-    position: fixed;
-    float: left;
-    bottom: 0;
-}
-.footer > .copyright{
-    font-size: 1em;
-}
 .header{
     text-align: center;
     font-size: 3em;
